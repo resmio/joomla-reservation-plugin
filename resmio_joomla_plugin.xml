@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>resmio Plugin</name>
+	<author>Liliana Lietz</author>
+	<creationDate>June 2016</creationDate>
+	<copyright>Copyright (C) 2016 resmio GmbH / Liliana Lietz. All rights reserved.</copyright>
+	<!-- <license>GNU General Public License version 2 or later; see LICENSE.txt</license> -->
+	<authorEmail>liliana@resmio.com</authorEmail>
+	<authorUrl>resmio.com</authorUrl>
+	<version>1.0</version>
+	<description>Get Data from resmio API and show them through shortcodes</description>
+	<files>
+		<filename plugin="resmio_joomla_plugin">resmio_joomla_plugin.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+	</config>
+</extension>
