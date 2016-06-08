@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+	<name>resmio Plugin</name>
+	<author>Liliana Lietz</author>
+	<creationDate>June 2016</creationDate>
+	<copyright>Copyright (C) 2016 resmio GmbH / Liliana Lietz. All rights reserved.</copyright>
+	<authorEmail>liliana@resmio.com</authorEmail>
+	<authorUrl>resmio.com</authorUrl>
+	<version>1.0</version>
+	<description>Add a resmio button or widget to your website.</description>
+	<files>
+		<filename plugin="resmio">resmio.php</filename>
+		<filename>resmio.xml</filename>
+		<filename>index.html</filename>
+	</files>
+	<config>
+        <fields name="params">
+            <fieldset name="basic">
+            	<field name="welcome" type="spacer" label="&lt;a href='#' &gt;&lt;img src='http://localhost/Joomla_3.5.1-Stable-Full_Package/plugins/content/resmio/img/logo.png' alt='resmio logo' style='width:150px;'/&gt; &lt;/a&gt;"/>
+            	<field name="ID-description" type="spacer" label="&lt;h3&gt;Type in your resmio ID, change the colors of the resmio button and save the settings!&lt;/br&gt;&lt;/br&gt;No resmio ID yet? Sign up &lt;a href='https://app.resmio.com/signup?plan=2014-11-free&amp;recurrence=monthly&amp;referer=online_wpplugin' target='_blank'&gt; here &lt;/a&gt;for free!&lt;/h3&gt;"/>
+            	<field name="no-id" type="spacer" label="After saving the settings add [resmio-button] for the button and [resmio-widget] for the widget in every article you like."/>
+                <field name="resmio-id"  type="text" default="" class="required" label="resmio ID:"/>
+                <field name="colors-description" type="spacer" label="&lt;h3&gt;Edit the resmio button colors:&lt;/h3&gt;"/>
+                <field name="button-color" type="color" default="#00dd00" label="Button background color:"/>
+                <field name="button-text-color" type="color" default="#ffffff" label="Button background color:"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
